@@ -1,37 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Michael Fitzgerald Portfolio</title>
-        <!-- STYLESHEETS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css" />    
-        <!-- ICONS -->
-        <script src="https://kit.fontawesome.com/7e282d14cd.js" crossorigin="anonymous"></script>
-        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-        <!-- MAIN -->
-        <script src="index.js"></script>
-
-    </head>
-
-    <body>
-        <main>
-            <h1>Michael Fitzgerald</h1>
-            <div class="btn-group" role="group" aria-label="Basic example" id="break-button-group">
-                <button type="button" class="btn btn-link btn-primary btn-lg" id="button-5-mins"> <a href="https://mjf1406.github.io/various-classroom-tools/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> &nbsp; Various Classroom Tools</a></button>
-                <button type="button" class="btn btn-link btn-primary btn-lg" id="button-10-mins"> <a href="https://mjf1406.github.io/classroom-clock/index.html"><i class="fa-solid fa-clock"></i> &nbsp; Classroom Clock</a></button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/public-portfolio/components/ProjectCard.js"></script>
+    <script src="https://kit.fontawesome.com/7e282d14cd.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Michael J. Fitzgerald</title>
+</head>
+<header>
+    <nav class="fixed top-0 z-10 w-full h-16 bg-gray-800">
+        <div class="flex-row items-center justify-start hidden h-full pl-5 space-x-4 sm:flex">
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md hover:bg-cyan-900" name="nav-item" href="#nav-top" id="nav-item-introduction"><i class="fa-regular fa-id-card"></i> Introduction</a>
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md hover:bg-cyan-900" name="nav-item" href="#nav-projects" id="nav-item-teaching-philosophy"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md hover:bg-cyan-900" name="nav-item" href="#nav-teaching-philosophy" id="nav-item-teaching-philosophy"><i class="fa-solid fa-brain"></i> Teaching Philosophy</a>
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md hover:bg-cyan-900" name="nav-item" href="#nav-story" id="nav-item-story"><i class="fa-solid fa-book"></i> My Story</a>
+        </div>
+        <div class="flex flex-row items-center justify-start h-full pl-5 space-x-4 sm:hidden">
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md" name="nav-item" href="#nav-top" id="nav-item-introduction"><i class="fa-regular fa-id-card"></i></a>
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md" name="nav-item" href="#nav-projects" id="nav-item-teaching-philosophy"><i class="fa-solid fa-diagram-project"></i></a>
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md" name="nav-item" href="#nav-teaching-philosophy" id="nav-item-teaching-philosophy"><i class="fa-solid fa-brain"></i></a>
+            <a class="px-3 py-2 text-sm font-medium text-center rounded-md" name="nav-item" href="#nav-story" id="nav-item-story"><i class="fa-solid fa-book"></i></a>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="flex flex-col items-center justify-center m-5 mt-24">
+        <div class="flex flex-col items-center justify-center gap-3 mb-10">
+            <div class="w-full text-6xl text-center scroll-m-24" id="nav-top">Michael J. Fitzgerald</div>
+            <div class="w-full text-4xl text-center ">
+                <a href="https://github.com/mjf1406"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mfitz06/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="footer">
-                Made with <i class="fa fa-heart pulse" aria-hidden="true"></i> by Michael Fitzgerald. 
-                <div class="btn-group socials" role="group" aria-label="">
-                    <button type="button" class="btn btn-link btn-class btn-sm" data-toggle="tooltip" data-placement="top" title="LinkedIn"> <a href="https://www.linkedin.com/in/mfitz06/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>  </button>
-                    <button type="button" class="btn btn-link btn-class btn-sm" data-toggle="tooltip" data-placement="top" title="Github"> <a href="https://github.com/mjf1406" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></button>
-                    <button type="button" class="btn btn-link btn-class btn-sm" data-toggle="tooltip" data-placement="top" title="Portfolio"> <a href="https://mjf1406.github.io/portfolio/index.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-id-card"></i></a></button>
-                </div>
+            <div class="max-w-2xl text-2xl text-center">Elementary School Teacher, Web Developer, Programmer, Translator (Mandarin <i class="fa-solid fa-arrow-right-long"></i> English), Cyclist</div>
+            <div class="max-w-3xl text-xl text-center">Master of Arts in Elementary Teaching - 4.0 GPA</div>
+            <div class="max-w-3xl text-base text-center">Highly accomplished teacher with nearly a decade of experience teaching ESL, math, science, and language arts who has leveraged in-class games for engaging lessons, and who has utilized Python, advanced Excel techniques, and other tools to gain valuable insights into students and their behaviors all in order to better educate them.</div>
+        </div>
+        <div class="flex flex-col items-center justify-center max-w-5xl gap-10">
+            <div class="text-4xl scroll-m-24" id="nav-projects">Projects</div>
+            <div class="flex flex-row flex-wrap items-stretch justify-center gap-5">
+                <section class="p-3 bg-cyan-950 rounded-xl w-80 sm:w-96">
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <div class="text-3xl text-center">Various Classroom Tools</div>
+                        <div class="text-sm text-center"><i class="fa-solid fa-code"></i> Live!</div>
+                        <div class="text-2xl text-center">
+                            <a href="https://github.com/mjf1406/various-classroom-tools"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mjf1406.github.io/various-classroom-tools/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        <div class="text-base">A mobile-first webapp with a suite tools related to randomly picking students in various ways. This is meant for the teacher only and is not intended to be shared with parents or students.</div>
+                        <div class="p-2 text-sm border rounded opacity-50 border-cyan-200 w-100">I use this to randomly determine the line order for dismissal. The app is great for this because it ensures that every student goes first and last at least once before anyone goes first or last again. I also let the student who was last for the previous dismissal push the Sort button. Many students enthusiastically look forward to this.</div>
+                    </div>
+                </section>
+                <section class="p-3 bg-cyan-950 rounded-xl w-80 sm:w-96">
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <div class="text-3xl text-center">Classroom Clock</div>
+                        <div class="text-sm text-center"><i class="fa-solid fa-code"></i> Live!</div>
+                        <div class="text-2xl text-center">
+                            <a href="https://github.com/mjf1406/classroom-clock"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mjf1406.github.io/classroom-clock/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        <div class="text-base">A simple website that displays a large clock for viewing along with 6 buttons to quickly start timers of various lengths. Additionally, timers may be repeated to support centers rotations.</div>
+                        <div class="p-2 text-sm border rounded opacity-50 border-cyan-200 w-100">I use this to quickly set timers for various activities in class. This helps diverse learners immensely by 'externalizing their frontal lobe'. I also use it for centers whenever we do those. The app is great because the students quickly learn to recognize the different sounds and their meanings. Not only this, but each timer has its own color, so students can quickly know what they should be doing just based on the background color at a <dfn><abbr title="One of my favorite pleonasms 😄">quick glance</abbr></dfn>.</div>
+                    </div>
+                </section>
+                <section class="p-3 bg-cyan-950 rounded-xl w-80 sm:w-96">
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <div class="text-3xl text-center">MagniText</div>
+                        <div class="text-sm text-center"><i class="fa-solid fa-code"></i> Live!</div>
+                        <div class="text-2xl text-center">
+                            <a href="https://github.com/mjf1406/magni-text"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mjf1406.github.io/magni-text/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        <div class="text-base">A streamlined website designed to responsively maximize the font size of any input message, ensuring optimal utilization of the entire viewport. This tool is especially useful for displaying messages on a phone, enabling easy readability.</div>
+                        <div class="p-2 text-sm border rounded opacity-50 border-cyan-200 w-100">I use this to show students a quick message that does not require a reply during silent work. The messages are easy to read because they are blown up to take up my phone's entire screen.</div>
+                    </div>
+                </section>
+                <section class="p-3 bg-cyan-950 rounded-xl w-80 sm:w-96">
+                    <div class="flex flex-col items-center justify-center gap-2 opacity-30">
+                        <div class="text-3xl text-center">TangibleTalks</div>
+                        <div class="text-sm text-center"><i class="fa-solid fa-helmet-safety"></i> Under Construction</div>
+                        <div class="text-2xl text-center">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        <div class="text-base">A mobile-first local chat app. Different users get saved using a unique color-icon combination and their name to be easily identifiable. Chat history is also kept, just like any other chat app, although because it does not require the internet (once it is loaded), the history is limited based on local device storage limitations.</div>
+                        <div class="p-2 text-sm border rounded opacity-50 border-cyan-200 w-100">I use this to communicate with one or more students simultaneously during silent work. I type a message using the same <dfn><abbr title="Always a cute monkey 🐒, my favorite animal!">icon</abbr></dfn> and <dfn><abbr title="Always turquoise, my favorite color!">color</abbr></dfn>, then hand them the phone. They select their icon-color combination, then reply.</div>
+                    </div>
+                </section>
             </div>
-        </main>
-    </body>
+            <div class="text-4xl text-center scroll-m-24" id="nav-teaching-philosophy">Teaching Philosophy</div>
+            <div class="flex flex-col items-center justify-center max-w-2xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper velit. Curabitur vitae nunc sed velit dignissim sodales. Eget felis eget nunc lobortis. Odio aenean sed adipiscing diam donec adipiscing. Ut lectus arcu bibendum at varius vel pharetra vel turpis. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Mauris cursus mattis molestie a iaculis at erat. Tempus egestas sed sed risus pretium quam vulputate dignissim. Mauris sit amet massa vitae tortor. Elementum nibh tellus molestie nunc non blandit massa. Quis ipsum suspendisse ultrices gravida dictum fusce. Aliquet risus feugiat in ante. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Lorem sed risus ultricies tristique nulla aliquet. Ultrices gravida dictum fusce ut. Mauris pharetra et ultrices neque ornare aenean euismod elementum.
+
+                A iaculis at erat pellentesque adipiscing commodo elit. Et pharetra pharetra massa massa ultricies mi quis. Amet consectetur adipiscing elit ut aliquam. Eros in cursus turpis massa tincidunt dui ut. Consequat mauris nunc congue nisi vitae suscipit tellus. A pellentesque sit amet porttitor eget dolor morbi non arcu. Sodales neque sodales ut etiam sit amet nisl purus in. Nulla facilisi etiam dignissim diam quis. Eu nisl nunc mi ipsum. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Nibh venenatis cras sed felis eget velit aliquet sagittis id. In egestas erat imperdiet sed euismod nisi porta lorem. Porttitor eget dolor morbi non. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Velit euismod in pellentesque massa placerat.
+            </div>
+            <div class="text-4xl scroll-m-24" id="nav-story">Story</div>
+            <div class="flex flex-col items-center justify-center max-w-2xl">
+                <ol class="relative border-l border-gray-200 dark:border-gray-700">   
+                    <li class="mb-8 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2023 | Seoul, South Korea</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Maple Bear Songpa | English Language Arts Teacher -- 4th Grade Team Lead</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                    </li>               
+                    <li class="mb-8 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022 | Seoul, South Korea</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Maple Bear Songpa | English Language Arts Teacher</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                    </li>
+                    <li class="mb-8 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2021 - December 2021 | Lake Zurich, IL, USA</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Dovenmuehle Mortgage, Inc. | Acquisition Analyst</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                    </li>
+                    <li class="mb-8 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2018 - June 2021 | Remote </time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Yeehe | Chinese to English Translator</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                    </li>
+                    <li class="mb-8 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">December 2015 - June 2020 | Seoul, South Korea</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Avalon English | English Teacher</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
 </html>
